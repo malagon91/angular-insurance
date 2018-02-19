@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">Search</span>
+        <input type="text" class="form-control" placeholder="Buscar por nombre" aria-describedby="basic-addon1">
+    </div>
+    <br>
+    <div class="table table-responsive">
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th class="th text-center">Id</th>
+                    <th class="th text-center">Nombre</th>
+                    <th class="th text-center">Telefono</th>
+                    <th class="th text-center">Whatsapp</th>
+                    <th class="th text-center">Correo</th>
+                    <th class="th text-center">RFC</th>
+                    <th class="th text-center">CURP</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let customer of customers">
+                    <td class="text-center">{{customer.id}}</td>
+                    <td class="text-center">{{customer.name}}</td>
+                    <td class="text-center">{{customer.phone}}</td>
+                    <td class="text-center">{{customer.whatsapp}}</td>
+                    <td class="text-center">{{customer.email}}</td>
+                    <td class="text-center">{{customer.rfc}}</td>
+                    <td class="text-center">{{customer.curp}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
